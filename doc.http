@@ -1,0 +1,25 @@
+### Registration
+POST http://127.0.0.1:8000/dj-rest-auth/registration/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "pippo2",
+    "password1": "pippokey1234",
+    "password2": "pippokey1234",
+    "email": "pippo2@email.com"
+}
+
+### Login
+POST http://127.0.0.1:8000/dj-rest-auth/login/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "pippo2",
+    "password": "pippokey1234",
+    "email": "pippo2@email.com"
+}
+
+### Login
+GET http://127.0.0.1:8000/me/ HTTP/1.1
+Content-Type: application/json
+Authorization: Token 657b858b8aefa7f7235074087b0356c966d33050
